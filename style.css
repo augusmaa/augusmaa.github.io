@@ -56,6 +56,22 @@ main {
     margin: 0 auto;
 }
 
+/* Profile Note Styles */
+#profile-note {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+#tagline {
+    text-align: center;
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+}
+
+
+
 /* Social Media Icons Styles */
 .social-media {
     text-align: center;
@@ -71,6 +87,30 @@ main {
     width: 32px;
     height: 32px;
 }
+
+/* Default style for larger screens */
+.centered-content {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
+/* For screens smaller than 768px, reduce margins */
+@media screen and (max-width: 768px) {
+    .centered-content {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+/* For screens smaller than 480px, use full width */
+@media screen and (max-width: 480px) {
+    .centered-content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 
 /* Section Styles */
 section {
