@@ -3,13 +3,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    /*display: flex;*/
 }
+
+/* General styles */
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+/* Header Styles */
 
 /* Header Styles */
 header {
     background-color: #333;
     color: white;
     padding: 20px;
+    width: 100%;
+    position: fixed; /* Fix header to the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top of the content */
 }
 
 header h1 {
@@ -46,6 +61,10 @@ nav ul li a.active {
 /* Main Content Styles */
 main {
     padding: 20px;
+    margin: 150px;
+    margin-right: 320px;
+    margin-left: 320px;
+
 }
 
 /* Profile Photo Styles */
@@ -63,14 +82,13 @@ main {
     font-size: 1.2em;
     color: #333;
 }
+
 #tagline {
     text-align: center;
     font-size: 1em;
     color: #666;
     margin-top: 5px;
 }
-
-
 
 /* Social Media Icons Styles */
 .social-media {
@@ -88,7 +106,7 @@ main {
     height: 32px;
 }
 
-/* Default style for larger screens */
+/* Centered Content Styles */
 .centered-content {
     margin-left: 25%;
     margin-right: 25%;
@@ -111,10 +129,122 @@ main {
     }
 }
 
+/* CV-specific Styles */
+
+/*pdf */
+.pdf-download {
+    color: #d9534f;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.pdf-download i {
+    margin-right: 10px;
+}
+
+.pdf-download:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar styles */
+#sidebar {
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+}
+
+#sidebar ul {
+    list-style-type: none;
+}
+
+#sidebar ul li {
+    margin-bottom: 15px;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+#sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Section Card Styles */
+.cv-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CV Item Styles */
+.cv-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.year-label {
+    background-color: #b33e39;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.h2 {
+    font-size: 30px;
+    color: #555;
+    /*margin-bottom: 10px;*/
+}
+
+.details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.details ul {
+    list-style-type: circle;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.details ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
 
 /* Section Styles */
 section {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 /* Footer Styles */
@@ -123,4 +253,32 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: fixed; /* Fix footer to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure footer stays on top */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 160px;
+    }
+
+    #content {
+        margin-left: 180px;
+        width: calc(100% - 180px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #sidebar {
+        display: none;
+    }
+
+    #content {
+        margin-left: 0;
+        width: 100%;
+    }
 }
