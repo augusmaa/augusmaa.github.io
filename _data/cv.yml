@@ -1,0 +1,187 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Anderson AUGUSMA
+    - name: Background
+      value: Computer Science, Artificial Intelligence, Applied Mathematics
+    - name: Research Interest and Expertise
+      value: Multimodal Perception, Deep Learning, Computer Vision, Audio Modeling
+    - name: Languages
+      value: English, French, and Haitian
+    - name: Tools/Libraries
+      value: Python, PyTorch, and Tensorflow
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D. in Applied Mathematics and Computer Science
+      institution: Université Grenoble Alpes (UGA), Laboratoire Informatique de Grenoble (LIG, M-PSI Team) and Laboraboire Jean Kuntzmann (LJK, SVH Team),Grenoble, France
+      year: 2021-Present
+      description:
+        - Computer Science and Applied Mathematics
+        - Multimodal Perception 
+        - Group Emotion Recognition in-the-wild
+       # - Statistical Modeling
+        - Under supervision of Professor Dominique VAUFREYDAZ & Dr Frédérique LETUE
+
+    - title: M.Sc. in Economtrics and Statistics, IT Security & Risk
+      institution: Université Claude Bernard Lyon1 (UCBL), Lyon, France
+      year: 2019-2021
+      description:
+        - Econometrics and Statistics
+        - Data Management
+        - Data Science
+        - Machine Learning, Deep Learning
+        - IT Security and Risk
+
+    - title: M.Sc. in Fundamendal and Applied Mathematics
+      institution: Université d'Etat d'Haïti (UEH), Ecole Normale Supérieure (ENS), In collaboration with Université de Poitier (France)
+      year: 2017-2019
+      description:
+        - Fundamental and Applied Mathematics
+        - Numerical Analysis
+        - Scientific Calculation
+        - Optimization
+
+    - title: B.Sc. in Fundamendal and Applied Mathematics 
+      institution: Université d'Etat d'Haïti (UEH), Ecole Normale Supérieure (ENS), Port-au-Prince, Haïti
+      year: 2013-2017
+      description:
+        - Fundamental and Applied Mathematics
+        - Functional Analysis
+        - Statistics and Probability
+        
+    - title: Master thesis in Machine Learning
+      #institution: UCBL
+      year: 2020
+      description:
+        - An introduction to machine learning, application to auto insurance claim prediction.
+        
+    - title: Master thesis in Optimization
+      year: 2019
+      description: 
+        - Expediting the transition from  non-renewable energy to renewable energy via optimal control (H. Maurer, 2017).
+        
+    - title: Partial Differential Equation (PDE)
+      year: 2018
+      description: 
+        - Resolution of the wave equation in R^{n}.
+        
+- title: Experience
+  type: time_table
+  contents:
+    - title: Data Science Internship
+      institution: Laboratory of Auscultation, Modeling and Experimentation of transport infrastructures (LAMES), Nantes, France
+      year: 2021
+      description:
+        - Prediction and evaluation of road pavement failure modes based on their degradation and their relationship with key performance indicators.
+
+    - title: Data Analyst Internship
+      institution: INSAVALOR/PROVADEMS, Lyon, France
+      year: 2020
+      description:
+        - Data analysis, statistical modeling, and characterization of household waste.
+
+    
+
+- title: Teachings
+  type: time_table
+  contents:
+    - title: Main teacher
+      institution: Université de Grenoble Alpes, IUT2, Grenoble, France
+      year: 2022
+      description: 
+        - Statistical Modeling
+
+    - title: Teaching Assistant
+      institution: Université de Grenoble Alpes, IUT1, Grenoble, France
+      year: 2023
+      description:
+        - Python Programming
+        - Introduction to Linux fundamentals, including shell navigation and Bash scripting.
+        
+    - title: Teaching Assistant
+      institution: Grenoble INP, Genie Industriel(GI), Grenoble, France
+      year: 2024
+      description:
+        - Algorithmic Programming
+        - Linear Programming
+        - Data Engineering
+        - Data Analytics for Industrial Engineering
+        - Machine Learning (classification)
+        - Optimization
+        - Probabilty
+
+
+
+
+- title: Skills
+  type: map
+  contents:
+    - name: Languages 
+      value: English, French, Haitian
+    - name: Programming Language
+      value: Python, R/R-Studio, SQL, C, PHP, HTML
+    - name: Machine Learning Framework 
+      value: PyTorch, Tensorflow/Keras, Scikit‑Learn
+    - name: Environment System 
+      value: Unix/Linux (shell), Windows, Git
+    - name: Deep Learning 
+      value: Convolutional Neural Networks(CNN), Transformer, VAE/VQ-VAE, Object Detection, Instance Segmentation.
+    - name: Other
+      value: TeX, Pack Office, Access.
+
+
+    
+- title: Awards and Fundings
+  type: time_table
+  contents:
+    - year: 2023
+      title: Winner-EmotiW2023
+      items:
+        - Winner of Group Emotion Recognition in the Wild Challenge of International Conference on Multimodal Interaction (ICMI 2023).
+    - year: 2020
+      title: EIFFEL 2020
+      items:
+        - Recipient of a French Government Excellence Grant, MASTER-EIFFEL LAUREATS 2020 program, Campus-France.
+    - year: 2018
+      title: Mathematics Internship Grand 
+      items:
+        - Awarded an internship grant for achieving a high distinction in the Mathematics degree program, Université d'Etat d'Haiti.
+        
+- title: Research Interests
+  type: nested_list
+  contents:
+    - title: Multimodal Perception
+      items: 
+        - Emotion Recognition in-the-wild
+        - Object/Person Detection
+        - Instance Segmentation
+        - Audio Source Separation
+        
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Music, Hiking
+    - <u> Community Services:</u> Volunteer as trumpet player in the Orchestre du Campus de Grenoble (OCG), 2023, Grenoble, France.
+
+
+- title: Conference Participation and Talks
+  type: list
+  contents:
+    - Attended as speaker and author in Voice Privacy Challenge at INTERSPEECH 2024 ,Sep 2024, Kos, Greece.
+  
+    - Attended as speaker and author in ICMI/EmotiW, 25th  International Conference on Multimodal Interaction (ICMI), Oct 2023, Paris, France.
+    
+    - Presented a talk in PhD Seminar at Lorraine University, Invited as speaker for the PhD seminar at IAEM, Feb 2023, Lorraine University, France
+
+    - Attended as speaker and author in ACII 2022, Doctoral Consortium (DC), 10TH INTERNATIONAL CONFERENCE ON AFFECTIVE COMPUTING & INTELLIGENT INTERACTION,Oct 2022, Nara, Japan.
+
+    - Attended as participant in EIAH 2022, Methods of conducting research on computational environments for human learning, Nov 2022, Leysin,Switzerland.
+
+
+    - Attended as a participant in ECML PKDD 2022, European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases(ECML PKDD), Sep 2022, Grenoble, France.
+
+    - Attended as participant in JDS 2022, Journée de la statistique, Société Française de la Statistique (SFdS), Jun 2022, Lyon, France.
+
