@@ -267,30 +267,68 @@
   </header>
 
   <article>
-    <p>Coming soon …
-<!-- The defense is scheduled for **Tuesday, October 15th, 2024, at 3:00 pm**. The event will take place at ENSIMAG (Amphithéâtre H, Building H), 161 Rue des Mathématiques 89, 38400 Saint-Martin-d'Hères ([maps link]>(https://www.google.com/maps/place/University+Building+H+-+Ensimag/@45.1931334,5.7670624,17z/data=!3m1!4b1!4m6!3m5!1s0x478af5a7b8964147:0xfef8bb1c5a89c65e!8m2!3d45.1931334!4d5.7670624!16s%2Fg%2F11cnbmsrnw?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D)). It will also be broadcast live. The live video link will be added here in the coming weeks. --></p>
+    <p>
+  <strong>When:</strong>
+  <span id="event-local"></span><br>
+  <em>(Official time in Grenoble/Paris: <span id="event-paris"></span>)</em>
+</p>
 
-<!--The reviewed manuscript of my thesis can be found here: [Link to Manuscript](../assets/pdf/PhD_Thesis_Mathilde_JAY.pdf). It is entitled: "*A Versatile Methodology for Assessing the Electricity Consumption and Environmental Footprint of Machine Learning Training: from Supercomputers to Edge Devices*". The abstract can be found at the bottom of this page. The presentation will be in English.-->
+<time id="event-iso" datetime="2026-01-16T13:00:00Z" data-tz="Europe/Paris" data-title="PhD Defense">
+  Friday, January 16, 2026, 14:00 (Europe/Paris)
+</time>
 
-<!--# Jury
-### Reviewers
-- Aurélie BUGEAU, Professeure des Universités, Université de Bordeaux
-- Anne-Laure LIGOZAT, Professeure des Universités, Université Paris Saclay
+<script>
+  (function () {
+    const eventEl = document.getElementById('event-iso');
+    const eventUTC = new Date(eventEl.getAttribute('datetime'));
+    const parisTZ = eventEl.dataset.tz || 'Europe/Paris';
+    const baseOpts = { weekday:'long', year:'numeric', month:'long', day:'numeric', hour:'2-digit', minute:'2-digit' };
+    const localStr = new Intl.DateTimeFormat(undefined, baseOpts).format(eventUTC);
+    const parisStr = new Intl.DateTimeFormat(undefined, { ...baseOpts, timeZone: parisTZ }).format(eventUTC);
+    document.getElementById('event-local').textContent = localStr + ' (your local time)';
+    document.getElementById('event-paris').textContent = parisStr + ' (' + parisTZ + ')';
+  })();
+</script>
 
-<!-- ### Examinators
-- Emma STRUBELL, Assistant Professor, Carnegie Mellon University
-- Sylvain BOUVERET, Maître de conférences, Grenoble INP - Université de Grenoble Alpes
-- Claude LEPAPE, Ingénieur de Recherche, Schneider Electric
-- Claudia RONCANCIO, Professeure des Universités, Grenoble INP - Université Grenoble Alpes
+<!--Coming soon ...-->
+<p>The event will take place at IMAG (Auditorium, Building IMAG), 150 Place du torrent, 38400 Saint-Martin-d’Hères (<a href="https://maps.app.goo.gl/mzt4kJcHUMGf5rdm9" rel="external nofollow noopener" target="_blank">maps link</a>. It will also be broadcast live. The live video link will be added here in the coming weeks.</p>
 
-<!-- ### Guest
-- Bruno MONNET, Ingénieur, Hewlett Packard Enterprise
+<p>The reviewed manuscript of my thesis will be found here soon: <a href="../assets/pdf/anderson.pdf">Link to Manuscript</a>. It is entitled: “<em>Multimodal Group Emotion Recognition In-the-wild towards a privacy-safe
+non-individual approach</em>”. The abstract can be found at the bottom of this page. The presentation will be in English.</p>
 
-<!-- ### PhD Supervisors
-- Denis TRYSTRAM, Professeur des Universités, Grenoble INP - Université de Grenoble Alpes
-- Laurent LEFÈVRE, Chargé de Recherche HDR, Inria
+<h1 id="jury">Jury</h1>
+<h3 id="reviewers">Reviewers</h3>
+<ul>
+  <li>Alessandro VINCIARELLI, Full Professor, University of Glasgow</li>
+  <li>Antitza DANTCHEVA, Directrice de Recherche, Centre de l’INRIA Université Côte d’Azur à Sophia Antipolis</li>
+</ul>
 
-<!-- # Abstract -->
+<h3 id="examiners">Examiners</h3>
+<ul>
+  <li>Christine KERIBIN, Professeure des Universités, Université Paris-Saclay</li>
+  <li>Bernd DUDZIK, Assistant professor, Delft University</li>
+  <li>Didier SCHWAB, Professeure des Universités, Université Grenoble Alpes</li>
+</ul>
+
+<h3 id="phd-supervisors">PhD Supervisors</h3>
+<ul>
+  <li>Dominique VAUFREYDAZ, Professeur des Universités, Université de Grenoble Alpes</li>
+  <li>Frédérique LETUE, Maitresse de Conférence, Université de Grenoble Alpes</li>
+</ul>
+
+<h1 id="abstract">Abstract</h1>
+<h6 id="version-française-en-dessous"><em>(Version Française en dessous)</em></h6>
+<p>This thesis addresses the challenge of group emotion recognition (GER) in-the-wild. Traditional approaches to emotion recognition often rely on individual-level cues such as facial recognition, gaze tracking, or voice profiling. While effective in some settings, these methods raise serious concerns about privacy and surveillance. To overcome these limitations, this thesis prioritizes privacy preservation by leveraging only collective audio–visual signals, focusing on group-level rather than individual-level emotion recognition. The overall objective is to develop multimodal models that can infer group emotions while avoiding the risks associated with individual monitoring and surveillance. Two complementary frameworks are proposed to achieve this goal. The first introduces a cross-attention multimodal architecture for audio–video fusion, combined with a Frames Attention Pooling (FAP) strategy. This framework is further supported by synthetic data augmentation and validated through extensive ablation studies. These experiments demonstrate his effectiveness and robustness for GER in real-world conditions. The second, the Variational Encoder Multi-Decoder (VE-MD), introduces a shared latent space jointly optimized for emotion classification, body, and face structural representation prediction. Two structural representation decoding strategies are explored: DETR-based and heatmap-based, highlighting their respective strengths and limitations in group versus individual settings. A detailed analysis reveals how structural representation integration impacts GER differently compared to non-GER.The scientific contributions of this thesis are threefold. First, it provides new insights into the role of multimodality and structural representation-based cues for group-level affective computing, clarifying how group and individual settings diverge in their requirements and challenges. Second, it advances methodological design through the introduction of two complementary frameworks: a cross-attention fusion model with FAP for temporal aggregation, and VE-MD as a generalizable latent space for multitask learning. Third, it establishes a privacy-preserving paradigm for GER, showing that competitive or state-of-the-art performance can be achieved without relying on individual features as input data.</p>
+
+<h1 id="résumé">Résumé</h1>
+<h6 id="vèsyon-kreyòl-ayisyen-an-aprè"><em>(Vèsyon Kreyòl Ayisyen an aprè)</em></h6>
+
+<p>Cette thèse aborde le défi de la reconnaissance des émotions de groupe (GER) en conditions naturelles. Les approches traditionnelles de la reconnaissance des émotions s’appuient souvent sur des indices individuels tels que la reconnaissance faciale, le suivi du regard ou le profilage vocal. Bien qu’efficaces dans certains contextes, ces méthodes soulèvent de sérieuses préoccupations en matière de confidentialité et de surveillance. Pour surmonter ces limites, cette thèse donne la priorité à la préservation de la vie privée en exploitant uniquement des signaux audiovisuels collectifs, se concentrant sur la reconnaissance des émotions au niveau du groupe plutôt qu’au niveau individuel. L’objectif global est de développer des modèles multimodaux capables de déduire les émotions d’un groupe tout en évitant les risques de manipulation et de surveillance individuelle. Deux modélisations complémentaires sont proposées pour atteindre cet objectif. La première introduit une architecture multimodale à attention croisée pour la fusion audio-vidéo, combinée à une stratégie de Frames Attention Pooling (FAP). Cette modélisation est en outre soutenue par l’augmentation des données synthétiques et validée par des études d’ablation approfondies. Ces expériences démontrent son efficacité et sa robustesse pour le GER dans des conditions réelles. La seconde, le Variational Encoder Multi-Decoder (VE-MD), introduit un espace latent partagé optimisé conjointement pour la classification des émotions et la prédiction de la représentation structurelle du corps et du visage. Deux stratégies de décodage de la représentation structurelle sont explorées : celle basée sur DETR  et celle basée sur la carte thermique, mettant en évidence leurs forces et leurs limites respectives dans des contextes de groupe et hors groupe. Une analyse détaillée révèle comment l’intégration de la représentation structurelle a un impact différent sur le GER par rapport au non-GER. Les contributions scientifiques de cette thèse sont triples. Premièrement, elle apporte de nouvelles perspectives sur le rôle de la multimodalité et des indices basés sur la représentation structurelle pour la reconnaissance affective au niveau du groupe, en clarifiant comment les contextes de groupe et individuels divergent dans leurs exigences et leurs défis. Deuxièmement, elle fait progresser la conception méthodologique grâce à l’introduction de deux modélisations complémentaires : un modèle de fusion d’attention croisée avec FAP pour l’agrégation temporelle, et VE-MD comme espace latent généralisable pour l’apprentissage multitâche. Troisièmement, elle établit un paradigme de préservation de la vie privée pour le GER, montrant que des performances compétitives ou de pointe peuvent être obtenues sans s’appuyer sur des caractéristiques individuelles comme des données d’entrée.</p>
+
+<h1 id="rezime">Rezime</h1>
+
+<p>Tèz sa a adrese defi rekonesans emosyon gwoup (GER) nan kondisyon natirèl. Apwòch tradisyonèl yo pou rekonesans emosyon souvan apiye sou siyal endividyèl tankou rekonesans vizaj, swivi je, oswa pwofilaj vwa. Malgre yo efikas nan kèk kontèks, metòd sa yo soulve gwo enkyetid sou vi prive ak siveyans. Pou simonte limitasyon sa yo, tèz sa a bay priyorite ak prezèvasyon vi prive lè li itilize sèlman siyal odyovizyèl kolektif yo. Li konsantre sou rekonesans emosyon gwoup moun ansanm olye chak grenn moun nan group la. Objektif jeneral la se devlope modèl miltimodal (zouti entèlijans atifisyèl) ki kapab rekonèt emosyon gwoup moun pandan y’ap evite risk manipilasyon ak siveyans endividyèl. De apwòch modelizasyon konplemantè pwopoze pou reyalize objektif sila a. Premye a prezante yon achitekti miltimodal atansyon kwaze pou fizyon odyo-videyo, konbine avèk yon estrateji Frames Attention Pooling (FAP). Modèl sa a sipòte pa ogmantasyon done sentetik epi valide pa etid ablasyon divès. Eksperyans sa yo demontre efikasite ak robistès modèl la pou GER nan kondisyon reyèl. Dezyèm nan, Variational Encoder Multi-Decoder (VE-MD), entrodwi yon espas latan pataje optimize ansanm pou klasifikasyon emosyon ak prediksyon reprezantasyon estriktirèl kò ak vizaj moun. Gen de strateji ki eksplore pou dekode reprezantasyon estriktirèl yo: yonn ki baze sou yon modèl DETR ak yonn ki baze sou kat chalè (heatmap), aksan mete sou fòs ak limit respektif yo nan kontèks gwoup ak non-gwoup. Yon analiz detaye revele kijan entegrasyon reprezantasyon estriktirèl yo gen yon enpak diferan sou GER konpare ak sa ki pa GER (non-GER). Kontribisyon syantifik tèz sa a gen twa aspè. Premyèman, li bay yon nouvo apèsi sou wòl miltimodalite ak siyal ki baze sou reprezantasyon estriktirèl pou rekonesans siyal afektif nan nivo gwoup, li klarifye kijan kontèks gwoup ak endividyèl yo divèje nan egzijans ak defi yo. Dezyèmman, li fè pwogrèse konsepsyon metodolojik atravè entwodiksyon de modèl konplemantè: yon modèl fizyon atansyon kwaze ak FAP pou agregasyon tanporèl, ak VE-MD kòm yon espas latan jeneralizab pou aprantisaj milti-tach. Twazyèmman, li etabli yon apwòch ki prezève vi prive pou GER, li montre ke pèfòmans konpetitif oswa dènye kri yo ka reyalize san yo pa konte sou karakteristik endividyèl kòm done an antre.</p>
+
 
   </article>
 
